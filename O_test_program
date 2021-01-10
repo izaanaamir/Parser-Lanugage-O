@@ -1,0 +1,143 @@
+void main()
+{
+    # Single line comment
+
+    /* Multi
+    line
+    comment
+    */
+
+    # required primitive data types
+    # void
+    # int
+    # string
+    # bool
+
+    # variable declaration
+    # void needs no definition
+    int int_def = 69;
+    string string_def1 = "69";
+    string string_def2 = "Hi, my name is Mannan Abdul.";
+    bool bool_def = true;
+
+    # constant variable declaration
+    final int INT_DEF = 69;
+    final string STRING_DEF = "69";
+    final bool BOOL_DEF = false;
+
+    # assignment operator
+    bool_def = false;
+    int_def = 69;
+    int_def = +69;
+    int_def = -69;
+
+    # arithmetic operators
+    int_def = 6 / 9;
+    int_def = 6 * 9;
+    int_def = 6 - 9;
+    int_def = 6 + 9;
+    int_def = int_def ** 69;
+
+    # other operators
+    bool_def = bool_def & BOOL_DEF;
+    bool_def = bool_def | BOOL_DEF;
+    bool_def = bool_def ^ BOOL_DEF;
+    bool_def = !bool_def;
+    int_def++;
+    int_def--;
+
+    # loops
+    # for loop with if statements without else
+    for( int x = 0; x <= INT_DEF; x++)
+    {
+        if( x == INT_DEF)
+        {
+            print("nice");
+        }
+        if( x != INT_DEF)
+        {
+            print(x);
+        }
+    } 
+
+    # while loop with if else statements
+    int loopcheck = 0;
+
+    while( loopcheck < 100)
+    {
+        if( loopcheck == INT_DEF)
+        {
+            print("nice");
+        }
+        else if( loopcheck == 99)
+        {
+            print("almost done");
+        }
+        else
+        {
+            print( loopcheck);
+        }
+        loopcheck++;        
+    }
+
+    # method definition that is not void
+    int testMethod( int parameter1, string parameter2)
+    {
+        print("test method is called");
+        print(parameter2);
+        return parameter1++;
+    }
+
+    # void method
+    void uselessMethod()
+    {
+    }
+
+    # method call
+    int_def = testMethod(68, "nice");
+
+    # calls to primitive functions
+    int_def = readInclination();
+    int_def = readAltitude();
+    int_def = readTemperature();
+    int_def = readAcceleration();
+    int_def = readCurrentTimestamp();
+    bool_def = turnOnCamera();
+    bool_def = turnOffCamera();
+    takePicture();
+    initiateConnection("192.168.0.1", 124578);
+    terminateConnection();
+
+    # sample program to test language
+    void takePictureOfCity(int altitude, bool bool_def)
+    {
+        if(altitude == 6000)
+        {
+            if(bool_def == true)
+            {
+                takePicture();
+            }
+            else
+            {
+                bool_def = turnOnCamera();
+                takePicture();
+                bool_def = turnOffCamera();
+            }
+        }
+    }
+
+    initiateConnection("192.168.0.1", 124578);
+    bool_def = tunrOffCamera();
+    int_def = readAltitude();
+    takePictureOfCity(int_def, bool_def);
+    terminateConnection();
+
+    # some primitive functions that are left
+    print(length(string_def1));
+    print(str(69));
+    scan(string_def2);
+    string filename = "input.txt";
+    scan(string_def1, filename); # scans from file in filename and puts in string_def1
+    print(str(69), filename); # prints to filename
+
+}
